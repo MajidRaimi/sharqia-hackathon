@@ -46,6 +46,15 @@ DEBUG=true
 
 ```bash
 cd apps/api
+python3 -m venv .venv
+.venv/bin/pip install -r <(uv pip compile pyproject.toml)
+cd ../..
+```
+
+Or if you have [uv](https://docs.astral.sh/uv/) installed:
+
+```bash
+cd apps/api
 uv sync
 cd ../..
 ```
@@ -58,7 +67,7 @@ bun run dev
 
 This launches [mprocs](https://github.com/pvolok/mprocs) which starts:
 
-- **db** -- PostgreSQL 17 (Docker container) on port `5432`
+- **db** -- PostgreSQL 16 (Docker container) on port `5432`
 - **api** -- FastAPI dev server on port `8000`
 
 Use the arrow keys in the mprocs TUI to switch between process logs. Press `q` to quit.
