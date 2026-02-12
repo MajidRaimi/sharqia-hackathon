@@ -1,0 +1,33 @@
+target-version = "py312"
+line-length = 120
+
+[lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "UP",
+    "B",
+    "A",
+    "C4",
+    "SIM",
+    "TCH",
+    "RUF",
+]
+ignore = [
+    "E501",
+    "B008",
+    "RUF012",
+]
+
+[lint.isort]
+known-first-party = ["app"]
+
+[format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true

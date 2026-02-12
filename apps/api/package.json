@@ -1,0 +1,13 @@
+{
+  "name": "@repo/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "echo 'Python API - no build step'",
+    "lint": "uv run ruff check .",
+    "format": "uv run ruff format . && uv run ruff check --fix .",
+    "check-types": "echo 'Type checking via pyright not configured yet'",
+    "clean": "rm -rf __pycache__ .pytest_cache .ruff_cache"
+  }
+}

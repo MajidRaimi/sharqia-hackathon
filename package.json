@@ -4,12 +4,13 @@
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "mprocs",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
     "clean": "turbo run clean"
   },
   "devDependencies": {
+    "mprocs": "^0.8.3",
     "turbo": "^2"
   },
   "packageManager": "bun@1.2.5"
