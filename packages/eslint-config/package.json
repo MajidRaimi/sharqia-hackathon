@@ -1,0 +1,16 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["*.mjs"],
+  "exports": {
+    "./next-js": "./next-js.mjs",
+    "./react-internal": "./react-internal.mjs"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^15",
+    "eslint": "^9",
+    "eslint-config-next": "^15",
+    "typescript-eslint": "^8"
+  }
+}
