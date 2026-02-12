@@ -15,6 +15,7 @@ dependencies = [
     "passlib[bcrypt]>=1.7",
     "httpx>=0.28",
     "python-multipart>=0.0.18",
+    "openai>=1.0",
 ]
 
 [project.optional-dependencies]

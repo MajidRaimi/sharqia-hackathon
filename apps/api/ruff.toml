@@ -20,6 +20,7 @@ ignore = [
     "E501",
     "B008",
     "RUF012",
+    "RUF001",
 ]
 
 [lint.isort]
